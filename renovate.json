@@ -2,12 +2,12 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
       "config:base",
-      ":semanticCommitsDisabled"
+      ":semanticCommitsDisabled",
+      "schedule:earlyMondays"
     ],
     "automerge": true,
     "labels": [
       "dependencies"
     ],
-    "rebaseWhen": "conflicted",
-    "schedule": ["every Monday at 8am"]
+    "rebaseWhen": "conflicted"
   }
